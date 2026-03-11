@@ -11,9 +11,12 @@
            0. BRAND VARIABLES
            ========================================= */
         :root {
-            --primary: #5a76ed; /* Hedgehogs Soft Blue */
-            --primary-green: #1b915a; /* Hedgehogs Vibrant Green */
-            --dark: #12141d; /* Deep Slate/Black */
+            --primary: #5a76ed;
+            /* Hedgehogs Soft Blue */
+            --primary-green: #1b915a;
+            /* Hedgehogs Vibrant Green */
+            --dark: #12141d;
+            /* Deep Slate/Black */
             --slate: #2c3e50;
             --light-bg: #f8f9fa;
             --white: #ffffff;
@@ -291,7 +294,11 @@
             border-right: 1px solid #ddd;
         }
 
-        .award-card h3 { font-size: 3rem; color: var(--primary); font-weight: 900; }
+        .award-card h3 {
+            font-size: 3rem;
+            color: var(--primary);
+            font-weight: 900;
+        }
 
         .award-card p {
             font-weight: 800;
@@ -354,7 +361,7 @@
             background-size: cover;
             background-position: center;
             border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .feature-content {
@@ -547,7 +554,9 @@
             text-align: center;
         }
 
-        .section-header span { color: var(--primary-green); }
+        .section-header span {
+            color: var(--primary-green);
+        }
 
         .roadmap-grid {
             display: grid;
@@ -610,7 +619,9 @@
             letter-spacing: -4px;
         }
 
-        .contact-left h2 span { color: var(--primary-green); }
+        .contact-left h2 span {
+            color: var(--primary-green);
+        }
 
         .contact-right {
             flex: 1.2;
@@ -621,7 +632,11 @@
             border-left: 1px solid #eee;
         }
 
-        .editorial-form { width: 100%; display: flex; flex-direction: column; }
+        .editorial-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
         .editorial-form input,
         .editorial-form select,
@@ -641,7 +656,9 @@
             transition: 0.3s;
         }
 
-        .editorial-form input:focus, .editorial-form select:focus, .editorial-form textarea:focus {
+        .editorial-form input:focus,
+        .editorial-form select:focus,
+        .editorial-form textarea:focus {
             outline: none;
             border-bottom-color: var(--primary);
         }
@@ -676,7 +693,10 @@
             margin-bottom: 20px;
         }
 
-        .footer-brand p { opacity: 0.5; max-width: 300px; }
+        .footer-brand p {
+            opacity: 0.5;
+            max-width: 300px;
+        }
 
         .footer-links h4,
         .footer-contact h4 {
@@ -687,8 +707,14 @@
             color: var(--primary-green);
         }
 
-        .footer-links ul { list-style: none; }
-        .footer-links li { margin-bottom: 15px; }
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
         .footer-links a {
             color: #fff;
             text-decoration: none;
@@ -696,7 +722,11 @@
             opacity: 0.7;
             transition: 0.3s;
         }
-        .footer-links a:hover { opacity: 1; color: var(--primary); }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--primary);
+        }
 
         .footer-bottom {
             padding-top: 40px;
@@ -726,18 +756,27 @@
             letter-spacing: 2px;
             text-decoration: none;
             z-index: 2000;
-            box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
         }
 
         /* =========================================
            12. MOBILE OVERRIDES
            ========================================= */
         @media (max-width: 900px) {
-            body { overflow-x: hidden; padding-bottom: 60px; }
-            .mobile-sticky-cta { display: block; }
-            
-            .main-header { padding: 10px 5%; height: 80px; }
-            
+            body {
+                overflow-x: hidden;
+                padding-bottom: 60px;
+            }
+
+            .mobile-sticky-cta {
+                display: block;
+            }
+
+            .main-header {
+                padding: 10px 5%;
+                height: 80px;
+            }
+
             .hamburger {
                 display: block;
                 width: 30px;
@@ -746,6 +785,7 @@
                 cursor: pointer;
                 z-index: 1100;
             }
+
             .hamburger span {
                 display: block;
                 width: 100%;
@@ -757,6 +797,7 @@
                 transform: translateY(-50%);
                 transition: 0.3s;
             }
+
             .hamburger span::before,
             .hamburger span::after {
                 content: "";
@@ -768,11 +809,28 @@
                 left: 0;
                 transition: 0.3s;
             }
-            .hamburger span::before { top: -8px; }
-            .hamburger span::after { top: 8px; }
-            #menu-toggle:checked+.hamburger span { background: transparent; }
-            #menu-toggle:checked+.hamburger span::before { top: 0; transform: rotate(45deg); }
-            #menu-toggle:checked+.hamburger span::after { top: 0; transform: rotate(-45deg); }
+
+            .hamburger span::before {
+                top: -8px;
+            }
+
+            .hamburger span::after {
+                top: 8px;
+            }
+
+            #menu-toggle:checked+.hamburger span {
+                background: transparent;
+            }
+
+            #menu-toggle:checked+.hamburger span::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            #menu-toggle:checked+.hamburger span::after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
 
             .nav-menu {
                 position: fixed;
@@ -786,16 +844,54 @@
                 transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
                 z-index: 1050;
             }
-            #menu-toggle:checked~.nav-menu { height: 350px; border-bottom: 5px solid var(--primary); }
-            .nav-menu li { width: 100%; text-align: center; padding: 15px 0; border-bottom: 1px solid #f5f5f5; }
 
-            .split-hero { flex-direction: column; height: auto; margin-top: 80px; }
-            .hero-right { height: 450px; order: -1; margin-top: 70px; }
-            .hero-left { padding: 60px 5% 80px; text-align: center; }
-            .hero-left h1 { font-size: 3.5rem; letter-spacing: -2px; }
-            .hero-left p { border-left: none; padding-left: 0; margin-inline: auto; }
-            .hero-actions { flex-direction: column; justify-content: center; }
-            
+            #menu-toggle:checked~.nav-menu {
+                height: 350px;
+                border-bottom: 5px solid var(--primary);
+            }
+
+            .nav-menu li {
+                width: 100%;
+                text-align: center;
+                padding: 15px 0;
+                border-bottom: 1px solid #f5f5f5;
+            }
+
+            .split-hero {
+                flex-direction: column;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .hero-right {
+                display: none;
+                height: 450px;
+                order: -1;
+                margin-top: 70px;
+            }
+
+            .hero-left {
+                padding: 60px 5% 80px;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            .hero-left h1 {
+                font-size: 2.5rem;
+                letter-spacing: -2px;
+            }
+
+            .hero-left p {
+                border-left: none;
+                padding-left: 0;
+                margin-inline: Fauto;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                justify-content: center;
+            }
+
             .image-overlay-card {
                 width: 90%;
                 left: 5%;
@@ -804,34 +900,98 @@
                 box-shadow: 15px 15px 0px var(--primary);
             }
 
-            .authority-grid { flex-direction: column; text-align: center; }
-            .award-card { border-right: none; border-bottom: 1px solid #ddd; padding-bottom: 30px; justify-content: center;}
-            .trust-icons { flex-direction: column; gap: 40px; padding-top: 30px; }
+            .authority-grid {
+                flex-direction: column;
+                text-align: center;
+            }
 
-            .feature-row, .feature-row:nth-child(even) {
+            .award-card {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 30px;
+                justify-content: center;
+            }
+
+            .trust-icons {
+                flex-direction: column;
+                gap: 40px;
+                padding-top: 30px;
+            }
+
+            .feature-row,
+            .feature-row:nth-child(even) {
                 flex-direction: column;
                 padding: 60px 5%;
                 text-align: center;
                 gap: 40px;
             }
-            .feature-image { width: 100%; height: 300px; min-height: auto; }
 
-            .overlap-grid { grid-template-columns: 1fr; padding: 100px 5%; gap: 60px; }
-            .outline-text { font-size: 5rem; top: -30px; }
-            .image-block { height: 400px; }
-            .accent-img { display: none; }
+            .feature-image {
+                width: 100%;
+                height: 300px;
+                min-height: auto;
+            }
 
-            .editorial-review blockquote { font-size: 1.5rem; }
-            .impact-counters { flex-direction: column; gap: 60px; }
-            .roadmap-grid { grid-template-columns: 1fr; }
-            .road-item { border-right: none; border-bottom: 1px solid #eee; }
+            .overlap-grid {
+                grid-template-columns: 1fr;
+                padding: 100px 5%;
+                gap: 60px;
+            }
 
-            .side-contact { flex-direction: column; }
-            .contact-left h2 { font-size: 4rem; }
-            .btn-main { width: 100%; text-align: center; }
+            .outline-text {
+                font-size: 5rem;
+                top: -30px;
+            }
 
-            .footer-top { grid-template-columns: 1fr; gap: 50px; }
-            .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
+            .image-block {
+                height: 400px;
+            }
+
+            .accent-img {
+                display: none;
+            }
+
+            .editorial-review blockquote {
+                font-size: 1.5rem;
+            }
+
+            .impact-counters {
+                flex-direction: column;
+                gap: 60px;
+            }
+
+            .roadmap-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .road-item {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            .side-contact {
+                flex-direction: column;
+            }
+
+            .contact-left h2 {
+                font-size: 4rem;
+            }
+
+            .btn-main {
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -864,7 +1024,8 @@
                 <span>Landscape</span><br>
                 & Maintenance
             </h1>
-            <p><strong>A leader in landscape design and maintenance.</strong> Our professional staff and experienced team can take care of all of your landscape and irrigation needs.</p>
+            <p><strong>A leader in landscape design and maintenance.</strong> Our professional staff and experienced
+                team can take care of all of your landscape and irrigation needs.</p>
             <div class="hero-actions">
                 <a href="#contact" class="btn-main">Get Free Estimate</a>
                 <a href="tel:5756448038" class="btn-sub">575.644.8038</a>
@@ -874,7 +1035,8 @@
             <div class="image-overlay-card">
                 <span class="card-tag">STATE LICENSED</span>
                 <h3>Built to Code</h3>
-                <p>We are fully licensed by the State of New Mexico for complex irrigation and commercial pesticide applications.</p>
+                <p>We are fully licensed by the State of New Mexico for complex irrigation and commercial pesticide
+                    applications.</p>
                 <a href="#about" class="inline-link">Verify Credentials →</a>
             </div>
         </div>
@@ -902,36 +1064,49 @@
     </section>
 
     <section id="about" class="features-container">
-        
+
         <div class="feature-row">
-            <div class="feature-image" style="background-image: url('images/who-we-are.webp'); background-color: #eee;"></div>
+            <div class="feature-image" style="background-image: url('images/who-we-are.webp'); background-color: #eee;">
+            </div>
             <div class="feature-content">
                 <h2>Who We Are</h2>
-                <p>Hedgehogs is a family owned business in Las Cruces, NM. We have been in business since 1995. We are a leader in landscape design and maintenance services. Our professional staff and experienced team can take care of all of your landscape and irrigation needs.</p>
+                <p>Hedgehogs is a family owned business in Las Cruces, NM. We have been in business since 1995. We are a
+                    leader in landscape design and maintenance services. Our professional staff and experienced team can
+                    take care of all of your landscape and irrigation needs.</p>
             </div>
         </div>
 
         <div class="feature-row">
-            <div class="feature-image" style="background-image: url('images//irrigation.webp'); background-color: #eee;"></div>
+            <div class="feature-image"
+                style="background-image: url('images//irrigation.webp'); background-color: #eee;"></div>
             <div class="feature-content">
                 <h2>NM Irrigation Contractor #57008</h2>
-                <p>We are a licensed Irrigation Contractor in the State of New Mexico. (CID # 57008) This means we install sprinkler systems that meet both city and state code and keep you out of trouble. We guarantee that your system will work properly.</p>
+                <p>We are a licensed Irrigation Contractor in the State of New Mexico. (CID # 57008) This means we
+                    install sprinkler systems that meet both city and state code and keep you out of trouble. We
+                    guarantee that your system will work properly.</p>
             </div>
         </div>
 
         <div class="feature-row">
-            <div class="feature-image" style="background-image: url('images/pesticide.webp'); background-color: #eee;"></div>
+            <div class="feature-image" style="background-image: url('images/pesticide.webp'); background-color: #eee;">
+            </div>
             <div class="feature-content">
                 <h2>Commercial Pesticide Applicator #52215</h2>
-                <p>We are licensed Commercial Pesticide Applicators through New Mexico Dept. of Agriculture. (NMDA # 52215) This means we will take all precautions when applying chemicals to your yard so you and your pets stay safe. We are able to obtain commercial pesticides that are not available to the homeowner.</p>
+                <p>We are licensed Commercial Pesticide Applicators through New Mexico Dept. of Agriculture. (NMDA #
+                    52215) This means we will take all precautions when applying chemicals to your yard so you and your
+                    pets stay safe. We are able to obtain commercial pesticides that are not available to the homeowner.
+                </p>
             </div>
         </div>
 
         <div class="feature-row">
-            <div class="feature-image" style="background-image: url('images/customer-satisfaction.webp'); background-color: #eee;"></div>
+            <div class="feature-image"
+                style="background-image: url('images/customer-satisfaction.webp'); background-color: #eee;"></div>
             <div class="feature-content">
                 <h2>Customer Satisfaction Guaranteed</h2>
-                <p>Your satisfaction is our priority and we strive to provide a service we are proud of. We start every project by providing a thorough consultation to understand exactly what you want your landscape to look like. We do this to guarantee that your yard becomes what you want it to be.</p>
+                <p>Your satisfaction is our priority and we strive to provide a service we are proud of. We start every
+                    project by providing a thorough consultation to understand exactly what you want your landscape to
+                    look like. We do this to guarantee that your yard becomes what you want it to be.</p>
             </div>
         </div>
 
@@ -941,7 +1116,8 @@
         <div class="content-block">
             <h2 class="outline-text">Safe</h2>
             <h2>Lanscape <span>Mastery</span></h2>
-            <p>From complex sprinkler installations to pet-safe weed control, we handle the technical side of landscaping so you don't have to worry about fines or hazards.</p>
+            <p>From complex sprinkler installations to pet-safe weed control, we handle the technical side of
+                landscaping so you don't have to worry about fines or hazards.</p>
             <ul class="service-check-list">
                 <li>Code-Compliant Sprinklers</li>
                 <li>Commercial-Grade Weed Control</li>
@@ -959,7 +1135,8 @@
     <section class="editorial-review">
         <div class="review-content">
             <div class="star-rating">★★★★★</div>
-            <blockquote>"Beautiful results shouldn't come with hidden risks. Hiring an unlicensed handyman for water lines or chemicals is a gamble. Hedgehogs gives us absolute peace of mind."</blockquote>
+            <blockquote>"Beautiful results shouldn't come with hidden risks. Hiring an unlicensed handyman for water
+                lines or chemicals is a gamble. Hedgehogs gives us absolute peace of mind."</blockquote>
             <cite>— Do it right the first time.</cite>
         </div>
     </section>
@@ -988,12 +1165,14 @@
             <div class="road-item">
                 <span class="step">01</span>
                 <h4>Thorough Consultation</h4>
-                <p>We start every project by listening to understand exactly what you want your landscape to look like.</p>
+                <p>We start every project by listening to understand exactly what you want your landscape to look like.
+                </p>
             </div>
             <div class="road-item">
                 <span class="step">02</span>
                 <h4>Professional Execution</h4>
-                <p>Our experienced team installs and maintains your yard safely, securely, and strictly up to city codes.</p>
+                <p>Our experienced team installs and maintains your yard safely, securely, and strictly up to city
+                    codes.</p>
             </div>
             <div class="road-item">
                 <span class="step">03</span>
